@@ -2,16 +2,18 @@
     ViewBag.Title = "Home Page";
 }
 
+
 <div class="jumbotron">
     <h1>Hack Manchester 2018 - Emergency Visualizer</h1>
+    <img id="GCHQ-logo" src="~/Content/Images/GCHQLogo.png" /> 
     <p class="lead">GCHQ Challenge - Improve emergency services</p>
-    <p><a href="/Home/About" class="btn btn-primary btn-lg">See how we did it &raquo;</a></p>
+    <p><a href="/Home/About" class="btn btn-primary btn-lg btn">See how we did it &raquo;</a></p>
 </div>
 
 
-<div>
-    <h1>Emergency Visualizer</h1>
-    <p>Aiding the emergency services with open data, rendered on Bing maps</p>
+<!--<div>
+    <h1 id="map_title">Emergency Visualizer</h1>
+    <p id="map-description">Aiding the emergency services with open data, rendered on Bing maps</p>
     <div>
         <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=53.410599999999995~-2.14599999999999&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
         </iframe>
@@ -19,7 +21,20 @@
             <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=53.410599999999995~-2.14599999999999&amp;sty=r&amp;lvl=11&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
             <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=53.410599999999995~-2.14599999999999&amp;sty=r&amp;lvl=11&amp;rtp=~pos.53.410599999999995_-2.14599999999999____&amp;FORM=MBEDLD">Get Directions</a>
         </div>
-    </div>
+    </div>-->
     
 
+<!--</div>-->
+
+<div class="container-fluid">
+    <div id="myMap" style=""></div>
+
+    <div id="inputForm" style="display:none;">
+        <table>
+            <tr><td colspan="2"></td></tr>
+            <tr><td>Title</td><td><input id="titleTbx" type="text" /></td></tr>
+            <tr><td>Description</td><td><input id="descriptionTbx" type="text" /></td></tr>
+            <tr><td colspan="2"><input type="button" value="Save" onclick="saveData()" style="float:right;" /></td></tr>
+        </table>
+    </div>
 </div>

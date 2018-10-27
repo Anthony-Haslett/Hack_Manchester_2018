@@ -1,6 +1,11 @@
-﻿body {
+﻿
+/*Google font import for nicer appearance*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+     font-family: 'PT Sans', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +26,97 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*This class is used to override the generic navbar colours that Bootstrap provides*/
+.navbar-custom {
+    background-color: #031530;
+}
+
+/*Bootstrap style override as we change colours of link text*/
+.navbar-inverse .navbar-nav > li > a {
+    color:#fff;
+}
+
+/*Bootstrap style override as we change colours of brand text*/
+.navbar-inverse .navbar-brand {
+    color: #fff !important;
+}
+
+.jumbotron {
+
+   background-image: url("/Content/Images/salford-quays.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    color: #fff;
+
+}
+
+/*Title used to describe map*/
+#map_title {
+
+    text-align: center;
+
+}
+
+#map-description {
+
+    text-align:center;
+
+}
+
+/*This is the map itself*/
+#myMap {
+            position:relative;
+            width:100%;
+            height:600px;        
+
+}
+/*Input form that runs as an overlay on Bing maps*/
+ #inputForm {
+            position:absolute;
+            top:200px;
+            left:250px;
+            padding:10px;
+            background-color:white;
+            border:1px solid #000;
+            border-radius:10px;
+        }
+
+#GCHQ-logo {
+
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
