@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "RTSTool";
+}
+
+
+
+
+
+<div id="map-RTSTool" class="container-fluid">
+    <div id="myMap" style=""></div>
+    
+    <div id="userHelpRTS" class="alert alert-info" role="alert">
+        <strong>Hello there!</strong> Welcome to the Road Travel Safety System built for the public to use to check road accidents and crimes near them based on data from the past AND present.
+        <br />
+        <br />
+        <p><img src="~/hack_manchester/Content/Images/warning_icon_red.png"> - indicates a recent traffic incident which you can hover over to retrieve more details</p>
+    
+    <div id="inputForm" style="display:none;">
+        <table>
+            <tr><td colspan="2"></td></tr>
+            <tr><td>Title</td><td><input id="titleTbx" type="text" /></td></tr>
+            <tr><td>Description</td><td><input id="descriptionTbx" type="text" /></td></tr>
+            <tr><td colspan="2"><input type="button" value="Save" onclick="saveData()" style="float:right;" /></td></tr>
+        </table>
+    </div>
+</div>

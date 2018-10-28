@@ -6,62 +6,65 @@
     <title>@ViewBag.Title - Hack Manchester</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
     
    <!--***************************************************** PAST INCIDENTS *************************************************************-->
-    <script type='text/javascript'
+   <script type='text/javascript'
             src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&branch=experimental'
-            async defer>
-
-    </script>
+            async defer></script>
     <script type='text/javascript'>
-        function GetMap() {
-            var map = new Microsoft.Maps.Map('#myMap', {
-                credentials: "AmPenssjfb0PA6UhtIjVZY4Iil0M4bx-0pd8jvIMkVy9FnMXvZadH7TQZU63a6tk",
-                mapTypeId: Microsoft.Maps.MapTypeId.road,
-                center: new Microsoft.Maps.Location(53.469782, -2.295432),
-                zoom: 12
+
+            /***************************************************** PRESENT INCIDENTS *************************************************************/
+
+
+
+        </script> 
+    
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap'
+            async defer></script>
+    <script type='text/javascript'>
+    function GetMap() {
+        var map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'AmPenssjfb0PA6UhtIjVZY4Iil0M4bx-0pd8jvIMkVy9FnMXvZadH7TQZU63a6tk',
+            mapTypeId: Microsoft.Maps.MapTypeId.road,
+            center: new Microsoft.Maps.Location(53.474482, -2.249083),
+            zoom: 12
+        });
+        //Generate a 50,000 random locations that are within the bounds of the map view.
+        var locs = Microsoft.Maps.TestDataGenerator.getLocations(1000, map.getBounds());
+
+        //Load the HeatMap module.
+        Microsoft.Maps.loadModule('Microsoft.Maps.HeatMap', function () {
+            var heatmap = new Microsoft.Maps.HeatMapLayer(locs, {
+                intensity: 0.65,
+                radius: 1000,
+                unit: 'meters',
+                colorGradient: {
+                    '0': 'Black',
+                    '0.4': 'Purple',
+                    '0.6': 'Red',
+                    '0.8': 'Yellow',
+                    '1': 'White'
+                }
             });
+            map.layers.insert(heatmap);
+        });
 
-            //Generate a 50,000 random locations that are within the bounds of the map view.
-            var locs = Microsoft.Maps.TestDataGenerator.getLocations(100, map.getBounds());
+        var trafficManager;
 
-            //Load the HeatMap module.
-            Microsoft.Maps.loadModule('Microsoft.Maps.HeatMap', function () {
-                var heatmap = new Microsoft.Maps.HeatMapLayer(locs, {
-                    intensity: 0.65,
-                    radius: 1000,
-                    unit: 'meters',
-                    colorGradient: {
-                        '0': 'Black',
-                        '0.4': 'Purple',
-                        '0.6': 'Red',
-                        '0.8': 'Yellow',
-                        '1': 'White'
-                    }
-                });
-                map.layers.insert(heatmap);
-            });
+        //Load traffic module.
+        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
+            //Create an instance of the traffic manager and bind to map.
+            trafficManager = new Microsoft.Maps.Traffic.TrafficManager(map);
+            trafficManager.showLegend();    //Having this here keeps heatmap with incidents as well (together)
 
-       
-            var trafficManager;
-
-                //Load traffic module.
-                Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
-                    //Create an instance of the traffic manager and bind to map.
-                    trafficManager = new Microsoft.Maps.Traffic.TrafficManager(map);
-                    trafficManager.showLegend();
-
-                    //Display the traffic data.
-                    trafficManager.showIncidents();
-                });
-
-            }
-        
-
-        
-        /***************************************************** PRESENT INCIDENTS *************************************************************/
-
-
+            //Display the traffic data.
+            trafficManager.showIncidents();
+        });
+    }
     </script>
     <!--******************************************************************************************************************-->
 
@@ -85,6 +88,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("RTS Tool", "RTSTool", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

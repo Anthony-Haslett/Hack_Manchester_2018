@@ -45,12 +45,11 @@ textarea {
 
 .jumbotron {
 
-   background-image: url("/Content/Images/salford-quays.jpg");
+    background-image: url(http://localhost/Hack_Manchester/Content/Images/salford-quays.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
     color: #fff;
-
 }
 
 /*Title used to describe map*/
@@ -89,6 +88,50 @@ textarea {
     width: 150px;
     padding: 5px;
     margin-bottom: 10px;
+
+}
+
+#about-main-header {
+
+    text-align:center;
+
+}
+
+
+section {
+
+    text-align:center;
+
+}
+
+#mysqllogo {
+
+    margin-top:30px; 
+
+}
+
+#map-RTSTool {
+
+    margin: 0;
+    padding: 0px; 
+
+}
+
+#userHelpRTS {
+
+    margin-top:10px;
+
+}
+
+#contactTitle{
+
+    text-align: center;
+
+}
+
+#RTSLink{
+
+    margin-right: 5px;
 
 }
 

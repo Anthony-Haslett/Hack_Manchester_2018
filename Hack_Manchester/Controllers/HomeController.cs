@@ -26,5 +26,12 @@ namespace Hack_Manchester.Controllers
 
             return View();
         }
+
+        public ActionResult RTSTool()
+        {
+            ViewBag.Message = "Road Travel Safety Tool";
+
+            return View();
+        }
     }
 }
