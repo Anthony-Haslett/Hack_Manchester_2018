@@ -1,0 +1,612 @@
+{
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.479028",
+      "street": {
+        "id": 726065,
+        "name": "On or near Lloyd Street"
+      },
+      "longitude": "-2.246198"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "974caf4cb3e6acad29869848c99fca1f92d5eb0a2ffe5c329be042d03187054a",
+    "id": 51851425,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.481269",
+      "street": {
+        "id": 726107,
+        "name": "On or near Back Bridge Street"
+      },
+      "longitude": "-2.249179"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "fad4976dfe4f7f2f78007694e95150b96351e1250bdb10c49fb3f866a66901fd",
+    "id": 51844946,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478436",
+      "street": {
+        "id": 725968,
+        "name": "On or near George Street"
+      },
+      "longitude": "-2.241041"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "2ef50387efa5c3f4bf5a4645179a19ad29e7f095884014471af3aa49187570cf",
+    "id": 51844916,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.475729",
+      "street": {
+        "id": 723314,
+        "name": "On or near Oxford Street"
+      },
+      "longitude": "-2.242156"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "18af0d601fb023ba838a44722ca82371629f4f3245bc29545f363661b092f94c",
+    "id": 51844902,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.474639",
+      "street": {
+        "id": 723416,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.247649"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "a1317a8cd30d9792af6bfdc2e31691cae2d99f6bf2c72096d27db580c6cc9729",
+    "id": 51844900,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.481660",
+      "street": {
+        "id": 726052,
+        "name": "On or near Police Street"
+      },
+      "longitude": "-2.246846"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "44f55b3e8bf321637dd463c1c7f9d86f434b7d2c2a8dae8694ca5520bb7afb56",
+    "id": 51844863,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.477290",
+      "street": {
+        "id": 725906,
+        "name": "On or near Further/higher Educational Building"
+      },
+      "longitude": "-2.234526"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "b2338a46a357ba434bef83dcb9329019ac0bd5419554160cceafca901494cd2a",
+    "id": 51844854,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.481448",
+      "street": {
+        "id": 726095,
+        "name": "On or near Butter Lane"
+      },
+      "longitude": "-2.249391"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "f623174d59621a1589441843a0d122728701168dd3b41291068c7184965d9ab3",
+    "id": 51844850,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478510",
+      "street": {
+        "id": 726118,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.248907"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "722c84c8ee118c835ea97f56832acc2d98ea5a3063d188cd7a1fb100f12fa85c",
+    "id": 51844815,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.476724",
+      "street": {
+        "id": 725904,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.238922"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "dff7a6d5f82eed6f6ad6274a8f2fe2f27c8a0efe90d1e3fcdd30e2af2822fd3d",
+    "id": 51844813,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.477158",
+      "street": {
+        "id": 725880,
+        "name": "On or near Longworth Street"
+      },
+      "longitude": "-2.250873"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "9940a7368cd305cbf6b704a200eb6369639d493e234418cca4a8e420961a040a",
+    "id": 51844810,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478023",
+      "street": {
+        "id": 725915,
+        "name": "On or near Parking Area"
+      },
+      "longitude": "-2.236247"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "82c9a3c49afdc3c7489c7523e92b64c842a9e43bb9dc5aa46dc7bfa9c9545f86",
+    "id": 51844807,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.476724",
+      "street": {
+        "id": 725904,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.238922"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "c9381de462a31ce9cbb308b260cd58124e815301f932d407e8bfbd3dd381c600",
+    "id": 51844804,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478510",
+      "street": {
+        "id": 726118,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.248907"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "bb7805e1eca4c854492f1484bf2c1c1145ed50709c9d79579dca0c272a663d34",
+    "id": 51844794,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.476724",
+      "street": {
+        "id": 725904,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.238922"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "6d8de061eb7796986d77a3e921984126009b74ea3f990f9691093c17d3e2fb6b",
+    "id": 51844696,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.474639",
+      "street": {
+        "id": 723416,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.247649"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "b0e96862bc66c286480b2c351a1a651b719eed9ae63c24c09c184dce0cbd578f",
+    "id": 51844690,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.475729",
+      "street": {
+        "id": 723314,
+        "name": "On or near Oxford Street"
+      },
+      "longitude": "-2.242156"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "969389c4aacd2e032018d7d4afb1e77b1f313792137b6a36ecd1d2923634a396",
+    "id": 51844681,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.471695",
+      "street": {
+        "id": 723387,
+        "name": "On or near Crown Street"
+      },
+      "longitude": "-2.254275"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "18741f8d21fa0010d210406476ac37bb93ae46cc2a047dbb12870fbd5b0306b2",
+    "id": 51844659,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.473298",
+      "street": {
+        "id": 723384,
+        "name": "On or near Deansgate"
+      },
+      "longitude": "-2.252387"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "64fdf7eceb96294061b640d061463c4d2a3ab9f21fb1b2db0a721f047a60c0ae",
+    "id": 51844647,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.481660",
+      "street": {
+        "id": 726052,
+        "name": "On or near Police Street"
+      },
+      "longitude": "-2.246846"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "8909796b7fa4cf21318413363c91f512dd37260f9d3eba7e571f8ea792cbc1c1",
+    "id": 51844644,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.472423",
+      "street": {
+        "id": 723450,
+        "name": "On or near Lower Ormond Street"
+      },
+      "longitude": "-2.241188"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "3d3cc71b552d569be4c04f85d27f36c42bd2ea01e4cf240f4edda584575009a6",
+    "id": 51844621,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.477944",
+      "street": {
+        "id": 726112,
+        "name": "On or near Theatre/concert Hall"
+      },
+      "longitude": "-2.244594"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "77765a2d12c359cc0f757e4140cde8a3da08be0a6132acf7bcc3c0ddebe4f7fa",
+    "id": 51844612,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.471657",
+      "street": {
+        "id": 723471,
+        "name": "On or near Chester Street"
+      },
+      "longitude": "-2.242148"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "4fa1965b8f2e18ab11da3ce5f52f0c110cc7aee5a228c2759643277a2784190e",
+    "id": 51844592,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.479270",
+      "street": {
+        "id": 725998,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.242372"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "6eba7d4c15dbdc29f323d3a21d4b498c1c21f7620507f09e90a3ba2a1822fa12",
+    "id": 51844558,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478179",
+      "street": {
+        "id": 725940,
+        "name": "On or near Reyner Street"
+      },
+      "longitude": "-2.239533"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "c495ec18c9373a253214d33b2df6ce39fe29edc82d066dfaf108be191228d48b",
+    "id": 51844526,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478199",
+      "street": {
+        "id": 726061,
+        "name": "On or near Marron Place"
+      },
+      "longitude": "-2.247338"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "92c281eb10a3ad7c18c572fb56ded0e63c10321d1c9247f1b593604ae340adaf",
+    "id": 51844516,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.479028",
+      "street": {
+        "id": 726065,
+        "name": "On or near Lloyd Street"
+      },
+      "longitude": "-2.246198"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "6e2e432330e7aa8be8d7c35f296eee25b52bf4df1315079e4400df5b82665bc2",
+    "id": 51844499,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478955",
+      "street": {
+        "id": 726121,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.246815"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "751d185aad799bff3e49fcabfb3e197e3e7dd901adc41cb3f5a29c6a0a9ec0f0",
+    "id": 51844493,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.476636",
+      "street": {
+        "id": 725900,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.238002"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "53520c2d3ae7f1ce9b8f5de124cd84503ddacb28d20a6c859f0c657054e864ca",
+    "id": 51844490,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.472640",
+      "street": {
+        "id": 723428,
+        "name": "On or near Parking Area"
+      },
+      "longitude": "-2.240541"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "1471b89bb05fc48f0ff1fe1138302ef5b9f4d202a7c39e2661283d0b045636ec",
+    "id": 51844464,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.479434",
+      "street": {
+        "id": 725953,
+        "name": "On or near Mosley Street"
+      },
+      "longitude": "-2.241182"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "494a87eb5e9289d802f68e6d469dbad56e45011b5224ca1b6e75f243bb0eaf0d",
+    "id": 51844459,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.474920",
+      "street": {
+        "id": 723626,
+        "name": "On or near Amory Street"
+      },
+      "longitude": "-2.223755"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "c1524c438a5fb857d561b304ac882eec1a948899e3bc5ab15ae7ed369a17a724",
+    "id": 51844434,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478199",
+      "street": {
+        "id": 726061,
+        "name": "On or near Marron Place"
+      },
+      "longitude": "-2.247338"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "71d2003ffdcdc2a8a89bd932a69280f5d6123e722c31dad80ff8e65521848fd4",
+    "id": 51844422,
+    "location_subtype": "",
+    "month": "2016-01"
+  },
+  {
+    "category": "anti-social-behaviour",
+    "location_type": "Force",
+    "location": {
+      "latitude": "53.478066",
+      "street": {
+        "id": 726120,
+        "name": "On or near Nightclub"
+      },
+      "longitude": "-2.246252"
+    },
+    "context": "",
+    "outcome_status": null,
+    "persistent_id": "fe229dea77c3911d3c52b36d3d0e37dddfa84dabb6a46844d0be0744bef50be1",
+    "id": 51844419,
+    "location_subtype": "",
+    "month": "2016-01"
+  }

@@ -16,6 +16,8 @@
             async defer></script>
     <script type='text/javascript'>
 
+
+        
             /***************************************************** PRESENT INCIDENTS *************************************************************/
 
 
@@ -26,45 +28,102 @@
             src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap'
             async defer></script>
     <script type='text/javascript'>
-    function GetMap() {
-        var map = new Microsoft.Maps.Map('#myMap', {
-            credentials: 'AmPenssjfb0PA6UhtIjVZY4Iil0M4bx-0pd8jvIMkVy9FnMXvZadH7TQZU63a6tk',
-            mapTypeId: Microsoft.Maps.MapTypeId.road,
-            center: new Microsoft.Maps.Location(53.474482, -2.249083),
-            zoom: 12
-        });
-        //Generate a 50,000 random locations that are within the bounds of the map view.
-        var locs = Microsoft.Maps.TestDataGenerator.getLocations(1000, map.getBounds());
-
-        //Load the HeatMap module.
-        Microsoft.Maps.loadModule('Microsoft.Maps.HeatMap', function () {
-            var heatmap = new Microsoft.Maps.HeatMapLayer(locs, {
-                intensity: 0.65,
-                radius: 1000,
-                unit: 'meters',
-                colorGradient: {
-                    '0': 'Black',
-                    '0.4': 'Purple',
-                    '0.6': 'Red',
-                    '0.8': 'Yellow',
-                    '1': 'White'
-                }
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#myMap', {
+                credentials: 'AmPenssjfb0PA6UhtIjVZY4Iil0M4bx-0pd8jvIMkVy9FnMXvZadH7TQZU63a6tk',
+                mapTypeId: Microsoft.Maps.MapTypeId.road,
+                center: new Microsoft.Maps.Location(53.474482, -2.249083),
+                zoom: 12
             });
-            map.layers.insert(heatmap);
-        });
+            //Generate a 50,000 random locations that are within the bounds of the map view.
+            var locs = Microsoft.Maps.TestDataGenerator.getLocations(250, map.getBounds());
 
-        var trafficManager;
+            //Load the HeatMap module.
+            Microsoft.Maps.loadModule('Microsoft.Maps.HeatMap', function () {
+                var heatmap = new Microsoft.Maps.HeatMapLayer(locs, {
+                    intensity: 0.65,
+                    radius: 700,
+                    unit: 'meters',
+                    colorGradient: {
+                        '0': 'Black',
+                        '0.4': 'Purple',
+                        '0.6': 'Red',
+                        '0.8': 'Yellow',
+                        '1': 'White'
+                    }
+                });
+                map.layers.insert(heatmap);
+            });
 
-        //Load traffic module.
-        Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
-            //Create an instance of the traffic manager and bind to map.
-            trafficManager = new Microsoft.Maps.Traffic.TrafficManager(map);
-            trafficManager.showLegend();    //Having this here keeps heatmap with incidents as well (together)
+            var trafficManager;
 
-            //Display the traffic data.
-            trafficManager.showIncidents();
-        });
+            //Load traffic module.
+            Microsoft.Maps.loadModule('Microsoft.Maps.Traffic', function () {
+                //Create an instance of the traffic manager and bind to map.
+                trafficManager = new Microsoft.Maps.Traffic.TrafficManager(map);
+                trafficManager.showLegend();    //Having this here keeps heatmap with incidents as well (together)
+
+                //Display the traffic data.
+                trafficManager.showIncidents();
+            });
+
+
+
+            $.getJSON("https://data.police.uk/api/crimes-street/all-crime?poly=53.46,-2.275:53.49,-2.274:53.47,-2.207&date=2016-01", function (data) {
+                //poly created from 4 corners of lat lon, so you could grab these from the map based on each corner
+                var items = [];
+
+                $.each(data, function (key, val) { //all objects
+                    $.each(val, function (key1, val1) { //each objects contents
+
+                        if (key1 === "location") {
+
+                            var location2 = new Microsoft.Maps.Location(val1["latitude"], val1["longitude"]);
+                            currentPushpin = new Microsoft.Maps.Pushpin(location2);
+                            currentPushpin.setOptions({ icon: '/Content/Images/sedan-car-model.png' });
+                            map.entities.push(currentPushpin);
+
+
+                        }
+
+                    });
+                });
+
+
+            });
+
+             function StartTracking() {
+        //Add a pushpin to show the user's location.
+        userPin = new Microsoft.Maps.Pushpin(map.getCenter(), { visible: false });
+        map.entities.push(gpsPin);
+
+        //Watch the users location.
+        watchId = navigator.geolocation.watchPosition(UsersLocationUpdated);
     }
+
+    function UsersLocationUpdated(position) {
+        var loc = new Microsoft.Maps.Location(
+                    position.coords.latitude,
+                    position.coords.longitude);
+
+        //Update the user pushpin.
+        userPin.setLocation(loc);
+        userPin.setOptions({ visible: true });
+
+        //Center the map on the user's location.
+        map.setView({ center: loc });
+    }
+
+    function StopTracking() {
+        // Cancel the geolocation updates.
+        navigator.geolocation.clearWatch(watchId);
+
+        //Remove the user pushpin.
+        map.entities.clear();
+    }
+
+        }
+
     </script>
     <!--******************************************************************************************************************-->
 
